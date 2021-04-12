@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,700&family=Roboto&display=swap');
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100% );
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+}
+body{
+    font-family: 'Raleway', sans-serif; 
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+.Titulo{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.Subtitulo{
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+.hero{
+    height: 80vh;
+    background-image: var(--background), url('../img/programando.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-position: relative;
+}
+.hero .contenedor{
+    padding: 0;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.menu{
+    
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    font-weight: 700;
+}
+.hero--contenedor{
+    display: flex;
+    height: calc(70vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+.hero-texts{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.hero-Titulo{
+    font-size: 3.2rem;
+    text-align: center;
+}
+.hero-Subtitulo{
+   font-size: 2rem;
+   font-weight: 300;
+   margin: 15px 0;
+   text-align: center;
+}
+.hero-wave{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat (4), 1fr;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap:10px;
+    overflow: hidden;
+    align-items: center;
+}
+.Pconten{
+    font-size: 30px;
+}
+.pconten{
+   font-size: 20px;
+}
+.header{
+    height: 500px;
+}
+.img-proposito{
+    width: 100%;
+   grid-column: 2;
+   gap:10px;
+}
+.img{
+    width: 95%;
+    max-width: 400px;
+    
+}
+.aside{
+    width: 100%;
+    height: auto;
+    grid-column:3;
+}
+.textos-proposito{
+    width: 100%;
+   padding-right: 20px;
+   text-align: center;
+   grid-column: 1;
+   gap:10px;
+}
+
+.introduccion{
+    padding: 80px 0;
+}
+
+.items{
+    grid-column: 4/5;
+    grid-row: 1/-1;
+}
+.img-introduccion{
+    grid-column: 0/3;
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+}
+.Subtitulo{
+text-align: center;
+font-size: 15px;
+}
+
+.footer{
+color: #000;
+text-align: center;
+padding: 30px 0;
+}
+.content-foot{
+grid-column: span 3;
+}
+
