@@ -8,8 +8,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-boxs;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body{
     font-family: 'Raleway', sans-serif; 
 }
@@ -40,28 +43,54 @@ body{
 .hero .contenedor{
     padding: 0;
 }
-nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-nav > a{
+.navegacion{
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+    background-color: #667eea ;
     color: #fff;
-    font-weight: 400;
-    text-decoration: none;
-    margin-right: 10px;
-}
-nav > a:hover{
-    text-decoration: underline;
-    margin-right: 10px;
+    text-align: center;
 }
 
-.menu{
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+    color:#667eea7e;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu li a:hover{
+    color: #667eea;
+    transition: all .3s;
     
-    display: flex;
-    justify-content: flex-end;
-    height: 50px;
-    font-weight: 700;
+}
+.submenu{
+    position: absolute;
+    background: #667eea;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: block;
+    width: 150px;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
 }
 .hero--contenedor{
     display: flex;
@@ -143,7 +172,7 @@ nav > a:hover{
     grid-row: 1/-1;
 }
 .img-introduccion{
-    grid-column: 0/3;
+    grid-column: 1/2;
     grid-row: 1/-1;
     margin-bottom: 20px;
 }
