@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fase4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="contenedor">
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="indexFase4.html">Inicio</a></li>
+                    <li><a href="#">Temas</a>
+                        <ul class="submenu">
+                            <li><a href="Tema1.html">Tema 1</a> </li>
+                            <li><a href="Tema2.html">Tema 2</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Recursos Digitales</a>
+                        <ul class="submenu">
+                            <li><a href="Recurso1.html">Recurso 1</a> </li>
+                            <li><a href="Recurso2.html">Recurso 2</a> </li>
+                        </ul>                
+                    </li>
+                    <li><a href="#">Aprendizaje</a>
+                        <ul class="submenu">
+                            <li><a href="aprendizaje1.html">Aprendizaje 1</a> </li>
+                            <li><a href="aprendizaje2.html">Aprendizaje 2</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="autor.html">Autor</a></li>
+                </ul>
+            </nav>
+            <section class="hero--contenedor">
+                <div class="hero-texts">
+                    <h1 class="hero-Titulo">APRENDIZAJE 1</h1>
+                    <h2 class="hero-Subtitulo">En esta pagina web nos enfocaremos en explicar todas las Etiquetas con sus Atributos y valores, </h2>
+                    <h2 class="hero-Subtitulo">para todas aquellas personas que estan empezando en el mundo de las programacion de sitios web</h2>
+                </div>
+            </section>
+        </div>
+    </header>
+    <section class="introduccion grid">
+        <div class="items">
+            <div class="item">
+                <h1 class="hero-Titulo">Sitios Responsivos con Media Queries</h1><br>
+                A través de media queries podemos definir reglas CSS (estilos) que se activan cuando ciertas
+condiciones se cumplen, por ejemplo cuando el ancho de la pantalla sea mayor acierto tamaño.
+Un media query se declara utilizando la palabra clave @media seguido de una expresión entre
+paréntesis y un bloque de reglas CSS como se muestra a continuación:
+@media (min-width: 992px) {
+ /* acá van las reglas CSS que aplican para esta media query */
+}
+<br>
+Las reglas CSS se activan únicamente cuando se cumple la expresión que está entre paréntesis. En
+este caso la expresión es min-width: 992px, es decir, cuando la pantalla tiene un ancho igual o
+superior a 992 pixeles.
+Además de min-width también existe max-width para definir el ancho máximo de la pantalla para
+el que aplica el media query.
+<br>
+Por ejemplo, si queremos que el color de fondo sea rojo cuando el ancho de la pantalla sea de
+máximo 700 pixeles podemos hacer lo siguiente:
+@media (max-width: 700px) {
+ body { background-color: red; }
+ <section class="introduccion grid">
+    <div class="items">
+        <div class="item">
+            <h3 class="Subtitulo">
+                Aunque existen otras características que puedes utilizar para describir las pantallas (como el alto y
+                la orientación), las opciones que vimos en este post (min-width y max-width) son las más comunes
+                y un excelente punto de partida.
+                Los media queries son el componente fundamental de responsive design, pero para que una
+                página sea completamente adaptable debes verificar también que las imágenes, videos, tablas,
+                etc. se vean bien en todos los dispositivos. </div>
+    </div>
+<div class="img-introduccion">
+   <img src="img/responsive.png" alt="" class="img">
+</div>
+</section> 
+             </div>
+        </div>
+    </section> 
+    
+    <footer>
+     <div class="grid">
+        <div class="footer">
+            <div class="content-foot">
+                <h4>Correo: </h4>
+                <p>oquintanap@unadvirtual.edu.co</p>
+            </div>
+            <div class="content-foot">
+                <h4>Skipe:</h4>
+                <p>ofax-94</p>
+            </div>
+            <div class="content-foot">
+                <h4>Fecha</h4>
+                <p>19 de Febrero del 2021</p>
+            </div>      
+        </div>
+     </div>
+     
+</footer>
+</body>
+</html>
